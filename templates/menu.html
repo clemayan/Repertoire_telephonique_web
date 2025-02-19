@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Répertoire téléphonique</title>
+		<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+	</head>
+	<body>
+	  <h1 style="background-color:powderblue;">Répertoire téléphonique </h1>
+		<h2 style="color:#f5434d;">Menu</h2>
+	  <a href="{{ url_for('ajout_num') }}">Ajouter un numéro</a> </br>
+	  <a href="{{ url_for('recherche_num') }}">Rechercher un numéro</a>
+	</body>
+</html>

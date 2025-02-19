@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Répertoire téléphonique</title>
+		<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+	</head>
+	<body>
+	  <h1 style="background-color:powderblue;">Répertoire téléphonique </h1>
+		<h2 style="color:#f5434d;">Rechercher un numéro</h2>
+		<form action="{{ url_for('recherche_num') }}"method="post">
+				<p>Nom : <input type="text" name = "nomrecherche" required/>
+				<input type = "submit" value = "Valider" /><br></p>
+	  <a href="{{ url_for('menu') }}">Retour au menu principal</a>
+	</body>
+</html>
